@@ -23,10 +23,10 @@ class NotificationManager:
     def send_emails(self, emails, message):
         with smtplib.SMTP("smtp.gmail.com",587) as connection:
             connection.starttls()
-            connection.login("manpatel080802@gmail.com", "jmqsbnavffcmsnne")
+            connection.login("wefg@gmail.com", "34rt3rtgh")
             for email in emails:
                 connection.sendmail(
-                    from_addr="manpatel080802@gmail.com",
+                    from_addr="wefg@gmail.com",
                     to_addrs=email,
                     msg=f"Subject:New Low Price Flight!\n\n{message}".encode('utf-8')
                 )
